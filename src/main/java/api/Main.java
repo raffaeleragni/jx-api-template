@@ -1,6 +1,5 @@
 package api;
 
-import api.routes.*;
 import com.github.raffaeleragni.jx.http.*;
 import com.github.raffaeleragni.jx.injection.*;
 import java.util.*;

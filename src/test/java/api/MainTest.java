@@ -33,6 +33,13 @@ class MainTest {
   }
 
   @Test
+  void testGet404() {
+    var client = new Client();
+    var result = client.get("http://localhost:3000/undefined");
+    assertThat(result.status(), is(404));
+  }
+
+  @Test
   void testDbTest() {
     var client = new Client();
     var result = client.getString("http://localhost:3000/test-connection");

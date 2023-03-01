@@ -18,9 +18,9 @@ class Mapper {
     UserById userById) {
 
     routes = new HashMap<>();
-    routes.put("/", index);
     routes.put("/test-connection", testConnection);
     routes.put("/user/", userById);
+    routes.put("/", index);
 
     setupAuth(tokenChecker);
   }
